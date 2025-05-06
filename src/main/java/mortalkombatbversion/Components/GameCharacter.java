@@ -13,6 +13,13 @@ public class GameCharacter {
     private final CharacterName name;
     public String path;
 
+    /**
+     * @param level
+     * @param health
+     * @param damage
+     * @param name
+     * @param path
+     */
     public GameCharacter(int level, int health, int damage, CharacterName name, String path) {
         this.level = level;
         this.health = health;
@@ -22,6 +29,9 @@ public class GameCharacter {
         this.path=path;
     }
 
+    /**
+     * @return
+     */
     public boolean isDebuffed() {
         return turnsWithDebuff > 0;
     }
@@ -35,7 +45,6 @@ public class GameCharacter {
     public void setDebuffTurns(int i) {
         turnsWithDebuff = i;
     }
-
     public int getDebuffTurns() {
         return turnsWithDebuff;
     }
@@ -51,6 +60,7 @@ public class GameCharacter {
     public void setLevel(int i) {
         this.level = i;
     }
+
     public void addLevel() {
         this.level++;
     }

@@ -42,20 +42,40 @@ public class Mediator {
     private JRadioButton thirdItemButton;
     public JFrames gui;
 
+    /**
+     * @param enemy
+     * @param human
+     * @param enemyAction
+     * @param playerAction
+     */
     public void setActionLabels(GameCharacter enemy, GameCharacter human, Action enemyAction, Action playerAction) {
         updateLabel(playerActionLabel, human.getStringName(), "uses", playerAction.getType());
         updateLabel(enemyActionLabel, enemy.getStringName(), "use", enemyAction.getType());
     }
 
+    /**
+     * @param gameCharacter
+     * @param isDebuffed
+     */
     public void setDebuffLabel(GameCharacter gameCharacter, boolean isDebuffed) {
         String debuffText = isDebuffed ? String.format(DEBUFF_FORMAT, gameCharacter.getName(), gameCharacter.getDebuffTurns()) : "";
         updateDebuffLabel(gameCharacter, debuffText);
     }
 
+    /**
+     * @param label
+     * @param playerName
+     * @param action
+     * @param actionType
+     */
     private void updateLabel(JLabel label, String playerName, String action, String actionType) {
         label.setText(String.format(ACTION_FORMAT, playerName, action, actionType));
     }
 
+    /**
+     * @param gameCharacter
+     * @param debuffText
+     */
     private void updateDebuffLabel(GameCharacter gameCharacter, String debuffText) {
         if (gameCharacter.getName().equals(You)) {
             playerDebuffLabel.setText(debuffText);
@@ -64,25 +84,42 @@ public class Mediator {
         }
     }
 
+    /**
+     * @param gameCharacter
+     */
     public void setHealthBar(GameCharacter gameCharacter) {
         JProgressBar healthBar = gameCharacter.getName().equals(You) ? playerHealthBar : enemyHealthBar;
         healthBar.setValue(Math.max(gameCharacter.getHealth(), 0));
     }
 
+    /**
+     * @param human
+     */
     public void setPlayerMaxHealthBar(GameCharacter human) {
         playerHealthBar.setMaximum(human.getMaxHealth());
     }
 
+    /**
+     * @param enemy
+     */
     public void setEnemyMaxHealthBar(GameCharacter enemy) {
         enemyHealthBar.setMaximum(enemy.getMaxHealth());
     }
 
+    /**
+     * @param human
+     * @param items
+     */
     public void revive(GameCharacter human, Items[] items) {
         playerHealthLabel.setText(human.getHealth() + "/" + human.getMaxHealth());
         thirdItemButton.setText(items[2].getName() + ", " + items[2].getCount() + " шт");
         playerActionLabel.setText("Вы воскресли");
     }
 
+    /**
+     * @param text
+     * @param isVictory
+     */
     public void gameEnding(String text, boolean isVictory) {
         if (isVictory) {
             endGameDialog.setVisible(true);
@@ -102,6 +139,9 @@ public class Mediator {
         endFightDialog.setBounds(300, 150, 700, 600);
     }
 
+    /**
+     * @param text
+     */
     public void setRoundEndText(String text) {
         endRoundLabel.setText(text);
     }
@@ -111,17 +151,28 @@ public class Mediator {
         cantUseItemDialog.setBounds(300, 200, 400, 300);
     }
 
+    /**
+     * @param items
+     */
     public void setBagText(Items[] items) {
         firstItemButton.setText(items[0].getName() + ", " + items[0].getCount() + " шт");
         secondItemButton.setText(items[1].getName() + ", " + items[1].getCount() + " шт");
         thirdItemButton.setText(items[2].getName() + ", " + items[2].getCount() + " шт");
     }
 
+    /**
+     * @param human
+     * @param enemy
+     */
     public void setRoundTexts(GameCharacter human, GameCharacter enemy) {
         updateHealthLabel(playerHealthLabel, human);
         updateHealthLabel(enemyHealthLabel, enemy);
     }
 
+    /**
+     * @param label
+     * @param gameCharacter
+     */
     private void updateHealthLabel(JLabel label, GameCharacter gameCharacter) {
         if (gameCharacter.getHealth() >= 0) {
             label.setText(gameCharacter.getHealth() + "/" + gameCharacter.getMaxHealth());
@@ -130,6 +181,11 @@ public class Mediator {
         }
     }
 
+    /**
+     * @param human
+     * @param enemy
+     * @param items
+     */
     public void setNewRoundTexts(GameCharacter human, GameCharacter enemy, Items[] items) {
         playerActionLabel.setText("");
         enemyActionLabel.setText("");

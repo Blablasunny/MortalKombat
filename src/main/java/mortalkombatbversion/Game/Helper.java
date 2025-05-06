@@ -41,6 +41,11 @@ public class Helper {
         return this.enemies;
     }
 
+    /**
+     * @param mediator
+     * @param items
+     * @return
+     */
     public Player newHuman(Mediator mediator, Items[] items) {
         Player player = new Player(0, 80, 16, You);
         mediator.setHealthBar(player);
@@ -49,6 +54,12 @@ public class Helper {
         return player;
     }
 
+    /**
+     * @param player
+     * @param text
+     * @param table
+     * @throws IOException
+     */
     public void endGameTop(Player player, JTextField text, JTable table) throws IOException {
         gameResults.add(new GameResults(text.getText(), player.getPoints()));
         gameResults.sort(Comparator.comparing(GameResults::getPoints).reversed());
@@ -56,6 +67,9 @@ public class Helper {
         writeToExcel();
     }
 
+    /**
+     * @throws IOException
+     */
     public void writeToExcel() throws IOException {
         try (XSSFWorkbook book = new XSSFWorkbook()) {
             XSSFSheet sheet = book.createSheet("Результаты ТОП 10");
@@ -81,6 +95,9 @@ public class Helper {
         return this.gameResults;
     }
 
+    /**
+     * @throws IOException
+     */
     public void readFromExcel() throws IOException {
         XSSFWorkbook book = new XSSFWorkbook(new FileInputStream("Results.xlsx"));
         XSSFSheet sh = book.getSheetAt(0);
@@ -89,6 +106,9 @@ public class Helper {
         }
     }
 
+    /**
+     * @param table
+     */
     public void writeToTable(JTable table) {
         DefaultTableModel model = (DefaultTableModel) table.getModel();
         for (int i = 0; i < gameResults.size(); i++) {

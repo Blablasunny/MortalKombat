@@ -11,6 +11,11 @@ public class Logic {
 
     private final int[] experience_for_next_level = {40, 90, 180, 260, 410, 1000};
 
+    /**
+     * @param enemy
+     * @param list
+     * @return
+     */
     public Action chooseEnemyAction(GameCharacter enemy, ArrayList<Action> list) {
         switch (enemy.getName()) {
             case SUB_ZERO -> {
@@ -26,15 +31,26 @@ public class Logic {
         }
     }
 
+    /**
+     * @param player
+     */
     public void addPoints(Player player) {
         player.setExperience(20 + 5 * player.getLevel());
         player.setPoints(20 + 5 * player.getLevel() + player.getHealth() / 4);
     }
 
+    /**
+     * @param player
+     * @return
+     */
     public boolean checkExperience(Player player) {
         return player.getExperience() >= player.getNextExperience();
     }
 
+    /**
+     * @param player
+     * @param enemies
+     */
     public void levelUp(Player player, GameCharacter[] enemies) {
         player.addLevel();
         int i = 0;
@@ -47,11 +63,20 @@ public class Logic {
         }
     }
 
+    /**
+     * @param player
+     */
     public void addPointsBoss(Player player) {
         player.setExperience(50);
         player.setPoints(65 + player.getHealth() / 2);
     }
 
+    /**
+     * @param k1
+     * @param k2
+     * @param k3
+     * @param items
+     */
     public void addItems(int k1, int k2, int k3, Items[] items) {
         double i = Math.random();
         if (i < k1 * 0.01) {
@@ -65,20 +90,36 @@ public class Logic {
         }
     }
 
+    /**
+     * @param player
+     */
     public void addHealthToPlayer(Player player) {
         player.addMaxHealth(40 + 5 * player.getLevel());
     }
 
+    /**
+     * @param player
+     */
     public void addDamageToPlayer(Player player) {
         player.addDamage(5 + player.getLevel());
     }
 
+    /**
+     * @param enemy
+     * @param player
+     */
     public void newHealthEnemy(GameCharacter enemy, Player player) {
         enemy.addMaxHealth(enemy.getMaxHealth() * (35 - 3 * player.getLevel()) / 100);
         enemy.addDamage(enemy.getDamage() * (20 + player.getLevel()) / 100);
         enemy.addLevel();
     }
 
+    /**
+     * @param human
+     * @param items
+     * @param name
+     * @param mediator
+     */
     public void useItem(GameCharacter human, Items[] items, String name, Mediator mediator) {
         switch (name) {
             case "First item" -> {
@@ -101,6 +142,9 @@ public class Logic {
         }
     }
 
+    /**
+     * @param enemiesList
+     */
     public void resetEnemies(GameCharacter[] enemiesList) {
         for (GameCharacter enemy : enemiesList) {
             enemy.setLevel(1);

@@ -22,6 +22,9 @@ public class Location {
         return currentEnemiesList;
     }
 
+    /**
+     * @param maxEnemies
+     */
     public void setCurrentEnemies(int maxEnemies) {
         currentEnemiesList = new ArrayList<>();
         locationSize = 1 + (int) (Math.random() * maxEnemies);
@@ -34,6 +37,9 @@ public class Location {
     public static final int MAX_ENEMIES = 4;
     public static final int DEFAULT_ENEMY_INDEX = 4;
 
+    /**
+     * @return
+     */
     private GameCharacter getRandomEnemy() {
         int enemyIndex = (int) (Math.random() * MAX_ENEMIES);
         GameCharacter enemy = fullEnemiesList[enemyIndex];
@@ -45,6 +51,10 @@ public class Location {
         enemy.setPhoto();
     }
 
+    /**
+     * @param isNextLocation
+     * @param maxEnemies
+     */
     public void resetLocation(boolean isNextLocation, int maxEnemies) {
         if (isNextLocation) {
             currentLocation += 1;
@@ -65,6 +75,9 @@ public class Location {
         return currentEnemyNumber;
     }
 
+    /**
+     * @return
+     */
     public GameCharacter getCurrentEnemy() {
         GameCharacter enemy;
         if (currentEnemyNumber != locationSize) {

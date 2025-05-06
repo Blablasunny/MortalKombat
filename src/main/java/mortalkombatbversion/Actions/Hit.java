@@ -9,11 +9,19 @@ public class Hit extends Action {
     private static final double DEBUFF_BLOCK_DAMAGE_MULTIPLIER = 1.15;
     private static final double HEAL_DAMAGE_MULTIPLIER = 2.0;
 
+    /**
+     * @return
+     */
     @Override
     public String getType() {
         return "Hit";
     }
 
+    /**
+     * @param human
+     * @param enemy
+     * @param enemyActionType
+     */
     @Override
     public void realisation(GameCharacter human, GameCharacter enemy, String enemyActionType) {
         int damage = calculateDamage(human, enemy);
@@ -37,6 +45,11 @@ public class Hit extends Action {
         }
     }
 
+    /**
+     * @param human
+     * @param enemy
+     * @return
+     */
     private int calculateDamage(GameCharacter human, GameCharacter enemy) {
         int damage = human.getDamage();
         if (enemy.isDebuffed() && human.isDebuffed()) {

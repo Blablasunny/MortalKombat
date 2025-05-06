@@ -14,6 +14,9 @@ public enum CharacterName {
         this.name = name;
     }
 
+    /**
+     * @return
+     */
     public String getString() {
         return name;
     }

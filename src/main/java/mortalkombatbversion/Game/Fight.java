@@ -43,11 +43,19 @@ public class Fight {
         return this.enemy;
     }
 
+    /**
+     * @param enemyAction
+     * @param playerAction
+     */
     public void playerMove(Action enemyAction, Action playerAction) {
         mediator.setActionLabels(enemy, player, enemyAction, playerAction);
         playerAction.realisation(player, enemy, enemyAction.getType());
     }
 
+    /**
+     * @param enemyAction
+     * @param playerAction
+     */
     public void enemyMove(Action enemyAction, Action playerAction) {
         mediator.setActionLabels(player, enemy, enemyAction, playerAction);
         playerAction.realisation(enemy, player, enemyAction.getType());
@@ -71,6 +79,12 @@ public class Fight {
 
     }
 
+    /**
+     * @param a
+     * @param gameResults
+     * @param locationsNumber
+     * @param enemiesList
+     */
     public void hit(int a, ArrayList<GameResults> gameResults, int locationsNumber, GameCharacter[] enemiesList) {
         Logic action = new Logic();
         Action enemyAction = action.chooseEnemyAction(enemy, new ArrayList<>(actionsList));
@@ -104,6 +118,11 @@ public class Fight {
         checkDeath(gameResults, locationsNumber, enemiesList);
     }
 
+    /**
+     * @param gameResults
+     * @param locationsNumber
+     * @param enemiesList
+     */
     public void checkDeath(ArrayList<GameResults> gameResults, int locationsNumber, GameCharacter[] enemiesList) {
         if (player.getHealth() <= 0 & player.getItems()[2].getCount() > 0) {
             player.setHealth((int) (player.getMaxHealth() * 0.05));
@@ -121,6 +140,9 @@ public class Fight {
         }
     }
 
+    /**
+     * @param enemiesList
+     */
     public void endRound(GameCharacter[] enemiesList) {
         Logic action = new Logic();
         mediator.makeEndFightDialogVisible();
@@ -140,6 +162,9 @@ public class Fight {
         }
     }
 
+    /**
+     * @param enemiesList
+     */
     public void reset(GameCharacter[] enemiesList) {
         Logic action = new Logic();
         player.setDamage(16);
@@ -154,6 +179,10 @@ public class Fight {
         location.resetLocation(false, player.getLevel());
     }
 
+    /**
+     * @param gameResults
+     * @param enemiesList
+     */
     public void endFinalRound(ArrayList<GameResults> gameResults, GameCharacter[] enemiesList) {
         Logic action = new Logic();
         action.resetEnemies(enemiesList);

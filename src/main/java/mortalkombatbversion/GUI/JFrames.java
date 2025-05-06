@@ -78,12 +78,13 @@ public class JFrames extends javax.swing.JFrame {
         mediator.setCantUseItemDialog(this.cantUseItemDialog);
     }
 
+    /**
+     * @return
+     */
     public JPanel getFightPanel() {
         return fightPanel;
     }
 
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         fightFrame = new javax.swing.JFrame();
@@ -175,7 +176,7 @@ public class JFrames extends javax.swing.JFrame {
         fightPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         attackButton.setBackground(new java.awt.Color(255, 0, 0));
-        attackButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        attackButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12));
         attackButton.setText("Атаковать");
         attackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,7 +185,7 @@ public class JFrames extends javax.swing.JFrame {
         });
 
         blockButton.setBackground(new java.awt.Color(255, 204, 0));
-        blockButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        blockButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12));
         blockButton.setText("Защититься");
         blockButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,87 +203,87 @@ public class JFrames extends javax.swing.JFrame {
         enemyHealthBar.setMinimum(-1);
 
         enemyHeroLabel.setBackground(new java.awt.Color(0, 0, 0));
-        enemyHeroLabel.setFont(new java.awt.Font("Comic Sans MS", 2, 14)); // NOI18N
+        enemyHeroLabel.setFont(new java.awt.Font("Comic Sans MS", 2, 14));
 
         enemyDamageLabel.setBackground(new java.awt.Color(255, 255, 255));
-        enemyDamageLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        enemyDamageLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 14));
         enemyDamageLabel.setText("Damage");
 
         playerDamageLabel.setBackground(new java.awt.Color(255, 255, 255));
-        playerDamageLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        playerDamageLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 14));
         playerDamageLabel.setText("Damage");
 
         playerDamageValueLabel.setBackground(new java.awt.Color(255, 255, 255));
-        playerDamageValueLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        playerDamageValueLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 14));
         playerDamageValueLabel.setForeground(new java.awt.Color(255, 0, 0));
         playerDamageValueLabel.setText("16");
 
         enemyDamageValueLabel.setBackground(new java.awt.Color(255, 255, 255));
-        enemyDamageValueLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        enemyDamageValueLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 14));
         enemyDamageValueLabel.setForeground(new java.awt.Color(255, 0, 0));
         enemyDamageValueLabel.setText("16");
 
         playerLevelLabel.setBackground(new java.awt.Color(255, 255, 255));
-        playerLevelLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        playerLevelLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
         playerLevelLabel.setText("0 уровень");
 
         fightLabel.setBackground(new java.awt.Color(255, 255, 255));
-        fightLabel.setFont(new java.awt.Font("Comic Sans MS", 3, 36)); // NOI18N
+        fightLabel.setFont(new java.awt.Font("Comic Sans MS", 3, 36));
         fightLabel.setForeground(new java.awt.Color(0, 0, 153));
         fightLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         fightLabel.setText("FIGHT");
         fightLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         playerHealthLabel.setBackground(new java.awt.Color(255, 255, 255));
-        playerHealthLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        playerHealthLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14));
         playerHealthLabel.setForeground(new java.awt.Color(102, 102, 102));
         playerHealthLabel.setText("80/80");
 
         enemyHealthLabel.setBackground(new java.awt.Color(255, 255, 255));
-        enemyHealthLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        enemyHealthLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14));
         enemyHealthLabel.setForeground(new java.awt.Color(102, 102, 102));
         enemyHealthLabel.setText("80/80");
 
         experinceTitleLabel.setBackground(new java.awt.Color(255, 255, 255));
-        experinceTitleLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        experinceTitleLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18));
         experinceTitleLabel.setForeground(new java.awt.Color(128, 92, 31));
         experinceTitleLabel.setText("experience");
 
         pointsTitleLabel.setBackground(new java.awt.Color(255, 255, 255));
-        pointsTitleLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        pointsTitleLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18));
         pointsTitleLabel.setForeground(new java.awt.Color(128, 92, 31));
         pointsTitleLabel.setText("points");
 
         experienceValueLabel.setBackground(new java.awt.Color(255, 255, 255));
-        experienceValueLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        experienceValueLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14));
         experienceValueLabel.setForeground(new java.awt.Color(113, 90, 16));
         experienceValueLabel.setText("0/40");
 
         pointsValueLabel.setBackground(new java.awt.Color(255, 255, 255));
-        pointsValueLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        pointsValueLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14));
         pointsValueLabel.setForeground(new java.awt.Color(113, 90, 16));
         pointsValueLabel.setText("00");
 
         enemyLevelLabel.setBackground(new java.awt.Color(255, 255, 255));
-        enemyLevelLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        enemyLevelLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
         enemyLevelLabel.setText("1 уровень");
 
-        turnLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
+        turnLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 16));
         turnLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        enemyActionLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        enemyActionLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 12));
         enemyActionLabel.setForeground(new java.awt.Color(204, 0, 0));
         enemyActionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        playerHeroLabel.setFont(new java.awt.Font("Comic Sans MS", 2, 14)); // NOI18N
+        playerHeroLabel.setFont(new java.awt.Font("Comic Sans MS", 2, 14));
         playerHeroLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         playerHeroLabel.setText("Kitana");
 
-        stunLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
+        stunLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 16));
         stunLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         itemsButton.setBackground(new java.awt.Color(174, 183, 106));
-        itemsButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        itemsButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12));
         itemsButton.setText("Предметы");
         itemsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -294,12 +295,12 @@ public class JFrames extends javax.swing.JFrame {
 
         enemyNumberLabel.setText("Номер противника:");
 
-        playerActionLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        playerActionLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 12));
         playerActionLabel.setForeground(new java.awt.Color(204, 0, 0));
         playerActionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         debuffButton.setBackground(new java.awt.Color(51, 51, 255));
-        debuffButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        debuffButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12));
         debuffButton.setText("Дебаффнуть");
         debuffButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -499,13 +500,13 @@ public class JFrames extends javax.swing.JFrame {
         endFightPanel.setBackground(new java.awt.Color(179, 226, 217));
 
         endRoundLabel.setBackground(new java.awt.Color(204, 204, 204));
-        endRoundLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 42)); // NOI18N
+        endRoundLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 42));
         endRoundLabel.setForeground(new java.awt.Color(204, 0, 0));
         endRoundLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         endRoundLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         nextRoundButton.setBackground(new java.awt.Color(114, 218, 142));
-        nextRoundButton.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        nextRoundButton.setFont(new java.awt.Font("Comic Sans MS", 0, 24));
         nextRoundButton.setText("Дальше");
         nextRoundButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -570,12 +571,12 @@ public class JFrames extends javax.swing.JFrame {
 
         endGamePanel.setBackground(new java.awt.Color(255, 204, 255));
 
-        victoryLabel.setFont(new java.awt.Font("Comic Sans MS", 3, 24)); // NOI18N
+        victoryLabel.setFont(new java.awt.Font("Comic Sans MS", 3, 24));
         victoryLabel.setForeground(new java.awt.Color(255, 0, 0));
         victoryLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         victoryLabel.setText("Победа на вашей стороне");
 
-        enterNameField.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        enterNameField.setFont(new java.awt.Font("Comic Sans MS", 1, 18));
         enterNameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         enterNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -583,16 +584,16 @@ public class JFrames extends javax.swing.JFrame {
             }
         });
 
-        enterNameLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        enterNameLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14));
         enterNameLabel.setForeground(new java.awt.Color(102, 102, 102));
         enterNameLabel.setText("Введите имя своего персонажа для добавления");
 
-        enterNameLabelBottom.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        enterNameLabelBottom.setFont(new java.awt.Font("Comic Sans MS", 0, 14));
         enterNameLabelBottom.setForeground(new java.awt.Color(102, 102, 102));
         enterNameLabelBottom.setText("результата в таблицу рекордов");
 
         endGameButton.setBackground(new java.awt.Color(153, 153, 255));
-        endGameButton.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        endGameButton.setFont(new java.awt.Font("Comic Sans MS", 1, 14));
         endGameButton.setForeground(new java.awt.Color(51, 51, 51));
         endGameButton.setText("Закончить игру");
         endGameButton.addActionListener(new java.awt.event.ActionListener() {
@@ -659,7 +660,7 @@ public class JFrames extends javax.swing.JFrame {
 
         recordsTablePanel.setBackground(new java.awt.Color(204, 204, 255));
 
-        recordsTableLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        recordsTableLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 24));
         recordsTableLabel.setForeground(new java.awt.Color(51, 51, 51));
         recordsTableLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         recordsTableLabel.setText("Таблица рекордов");
@@ -697,7 +698,7 @@ public class JFrames extends javax.swing.JFrame {
         recordsTableScrollPane.setViewportView(recordsTable);
 
         closeRecordsTableButton.setBackground(new java.awt.Color(255, 255, 153));
-        closeRecordsTableButton.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        closeRecordsTableButton.setFont(new java.awt.Font("Comic Sans MS", 0, 18));
         closeRecordsTableButton.setForeground(new java.awt.Color(51, 51, 51));
         closeRecordsTableButton.setText("Закрыть");
         closeRecordsTableButton.addActionListener(new java.awt.event.ActionListener() {
@@ -747,17 +748,17 @@ public class JFrames extends javax.swing.JFrame {
 
         endGameWithoutLadderPanel.setBackground(new java.awt.Color(255, 204, 255));
 
-        endGameWithoutLadderTitlleLabel.setFont(new java.awt.Font("Comic Sans MS", 3, 24)); // NOI18N
+        endGameWithoutLadderTitlleLabel.setFont(new java.awt.Font("Comic Sans MS", 3, 24));
         endGameWithoutLadderTitlleLabel.setForeground(new java.awt.Color(255, 0, 0));
         endGameWithoutLadderTitlleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         endGameWithoutLadderTitlleLabel.setText("Победа на вашей стороне");
 
-        notInLadderLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        notInLadderLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14));
         notInLadderLabel.setForeground(new java.awt.Color(102, 102, 102));
         notInLadderLabel.setText("К сожалению, Ваш результат не попал в топ 10");
 
         endGameWithoutLadderButton.setBackground(new java.awt.Color(153, 153, 255));
-        endGameWithoutLadderButton.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        endGameWithoutLadderButton.setFont(new java.awt.Font("Comic Sans MS", 1, 14));
         endGameWithoutLadderButton.setForeground(new java.awt.Color(51, 51, 51));
         endGameWithoutLadderButton.setText("Закончить игру");
         endGameWithoutLadderButton.addActionListener(new java.awt.event.ActionListener() {
@@ -808,13 +809,13 @@ public class JFrames extends javax.swing.JFrame {
 
         itemsBagPanel.setBackground(new java.awt.Color(190, 182, 135));
 
-        itemsBagLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
+        itemsBagLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 16));
         itemsBagLabel.setForeground(new java.awt.Color(51, 51, 51));
         itemsBagLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         itemsBagLabel.setText("Мешок предметов");
 
         firstItemButton.setBackground(new java.awt.Color(190, 182, 135));
-        firstItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        firstItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
         firstItemButton.setText("Малое зелье лечение, 0 шт");
         firstItemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -823,7 +824,7 @@ public class JFrames extends javax.swing.JFrame {
         });
 
         secondItemButton.setBackground(new java.awt.Color(190, 182, 135));
-        secondItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        secondItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
         secondItemButton.setText("Большое зелье лечение, 0 шт");
         secondItemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -832,11 +833,11 @@ public class JFrames extends javax.swing.JFrame {
         });
 
         thirdItemButton.setBackground(new java.awt.Color(190, 182, 135));
-        thirdItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        thirdItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
         thirdItemButton.setText("Крест возрождения, 0 шт");
 
         useItemButton.setBackground(new java.awt.Color(239, 237, 14));
-        useItemButton.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        useItemButton.setFont(new java.awt.Font("Comic Sans MS", 1, 14));
         useItemButton.setText("Использовать");
         useItemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -891,18 +892,18 @@ public class JFrames extends javax.swing.JFrame {
 
         cantUseItemPanel.setBackground(new java.awt.Color(243, 120, 120));
 
-        cantUseItemLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        cantUseItemLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18));
         cantUseItemLabel.setForeground(new java.awt.Color(51, 51, 51));
         cantUseItemLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         cantUseItemLabel.setText("Вы не можете использовать ");
 
-        unavailableItemLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        unavailableItemLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18));
         unavailableItemLabel.setForeground(new java.awt.Color(51, 51, 51));
         unavailableItemLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         unavailableItemLabel.setText("этот предмет");
 
         closeCantUseItemButton.setBackground(new java.awt.Color(204, 204, 204));
-        closeCantUseItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        closeCantUseItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 18));
         closeCantUseItemButton.setForeground(new java.awt.Color(51, 51, 51));
         closeCantUseItemButton.setText("ОК");
         closeCantUseItemButton.addActionListener(new java.awt.event.ActionListener() {
@@ -1095,7 +1096,7 @@ public class JFrames extends javax.swing.JFrame {
         mkLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         mkLabel.setText("Mortal Kombat");
 
-        startButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        startButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
         startButton.setText("Начать новую игру");
         startButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1103,7 +1104,7 @@ public class JFrames extends javax.swing.JFrame {
             }
         });
 
-        seeResultsButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        seeResultsButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
         seeResultsButton.setText("Посмотреть таблицу \nрезультатов");
         seeResultsButton.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         seeResultsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -1154,22 +1155,22 @@ public class JFrames extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startButtonActionPerformed
+    private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {
         setLocationsFrame.setVisible(true);
         setLocationsFrame.setBounds(300, 200, 430, 350);
-    }//GEN-LAST:event_startButtonActionPerformed
+    }
 
-    private void attackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_attackButtonActionPerformed
+    private void attackButtonActionPerformed(java.awt.event.ActionEvent evt) {
         helper.fight.hit(1, helper.getResults(), locationsNumber, helper.getEnemies());
-    }//GEN-LAST:event_attackButtonActionPerformed
+    }
 
-    private void blockButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_blockButtonActionPerformed
+    private void blockButtonActionPerformed(java.awt.event.ActionEvent evt) {
         helper.fight.hit(0, helper.getResults(), locationsNumber, helper.getEnemies());
-    }//GEN-LAST:event_blockButtonActionPerformed
+    }
 
-    private void nextRoundButtonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException {//GEN-FIRST:event_nextRoundButtonActionPerformed
+    private void nextRoundButtonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException {
         locationLabel.setText("Текущая локация: " + helper.fight.location.getCurrentLocation() + "/" + locationsNumber);
         if ((helper.fight.location.getCurrentEnemyNumber() + 1) <= helper.fight.location.getCurrentEnemies().size()) {
             enemyNumberLabel.setText("Номер противника: " + (helper.fight.location.getCurrentEnemyNumber() + 1) + "/" + helper.fight.location.getCurrentEnemies().size());
@@ -1195,13 +1196,12 @@ public class JFrames extends javax.swing.JFrame {
         mediator.setNewRoundTexts(helper.fight.getHuman(), helper.fight.getEnemy(), helper.fight.getHuman().getItems());
 
         endFightDialog.dispose();
-    }//GEN-LAST:event_nextRoundButtonActionPerformed
+    }
 
-    private void enterNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterNameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_enterNameFieldActionPerformed
+    private void enterNameFieldActionPerformed(java.awt.event.ActionEvent evt) {
+    }
 
-    private void endGameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_endGameButtonActionPerformed
+    private void endGameButtonActionPerformed(java.awt.event.ActionEvent evt) {
         try {
             helper.endGameTop(helper.fight.getHuman(), enterNameField, recordsTable);
         } catch (IOException ex) {
@@ -1209,30 +1209,28 @@ public class JFrames extends javax.swing.JFrame {
         }
         endGameDialog.dispose();
         enterNameField.setText("");
-    }//GEN-LAST:event_endGameButtonActionPerformed
+    }
 
-    private void closeRecordsTableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeRecordsTableButtonActionPerformed
+    private void closeRecordsTableButtonActionPerformed(java.awt.event.ActionEvent evt) {
         recordsTableDialog.dispose();
-    }//GEN-LAST:event_closeRecordsTableButtonActionPerformed
+    }
 
-    private void seeResultsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seeResultsButtonActionPerformed
+    private void seeResultsButtonActionPerformed(java.awt.event.ActionEvent evt) {
         recordsTableDialog.setVisible(true);
         recordsTableDialog.setBounds(100, 100, 580, 450);
-    }//GEN-LAST:event_seeResultsButtonActionPerformed
+    }
 
-    private void endGameWithoutLadderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_endGameWithoutLadderButtonActionPerformed
+    private void endGameWithoutLadderButtonActionPerformed(java.awt.event.ActionEvent evt) {
         endGameWithoutLadderDialog.dispose();
-    }//GEN-LAST:event_endGameWithoutLadderButtonActionPerformed
+    }
 
-    private void firstItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstItemButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_firstItemButtonActionPerformed
+    private void firstItemButtonActionPerformed(java.awt.event.ActionEvent evt) {
+    }
 
-    private void secondItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_secondItemButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_secondItemButtonActionPerformed
+    private void secondItemButtonActionPerformed(java.awt.event.ActionEvent evt) {
+    }
 
-    private void useItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_useItemButtonActionPerformed
+    private void useItemButtonActionPerformed(java.awt.event.ActionEvent evt) {
         if (firstItemButton.isSelected()) {
             nameButton = "First item";
         }
@@ -1247,18 +1245,18 @@ public class JFrames extends javax.swing.JFrame {
         mediator.setHealthBar(player);
         playerHealthLabel.setText(player.getHealth() + "/" + player.getMaxHealth());
         mediator.setBagText(player.getItems());
-    }//GEN-LAST:event_useItemButtonActionPerformed
+    }
 
-    private void itemsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemsButtonActionPerformed
+    private void itemsButtonActionPerformed(java.awt.event.ActionEvent evt) {
         itemsBagDialog.setVisible(true);
         itemsBagDialog.setBounds(300, 200, 430, 350);
-    }//GEN-LAST:event_itemsButtonActionPerformed
+    }
 
-    private void closeCantUseItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeCantUseItemButtonActionPerformed
+    private void closeCantUseItemButtonActionPerformed(java.awt.event.ActionEvent evt) {
         cantUseItemDialog.dispose();
-    }//GEN-LAST:event_closeCantUseItemButtonActionPerformed
+    }
 
-    private void startWithLocationsButtonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException {//GEN-FIRST:event_startWithLocationsButtonActionPerformed
+    private void startWithLocationsButtonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException {
         try {
             locationsNumber = Integer.parseInt(setLocationsField.getText());
         }catch (Exception e){
@@ -1289,17 +1287,15 @@ public class JFrames extends javax.swing.JFrame {
         mediator.setNewRoundTexts(helper.fight.getHuman(), helper.fight.getEnemy(), helper.fight.getHuman().getItems());
 
         endFightDialog.dispose();
-    }//GEN-LAST:event_startWithLocationsButtonActionPerformed
+    }
 
-    private void setLocationsFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setLocationsFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_setLocationsFieldActionPerformed
+    private void setLocationsFieldActionPerformed(java.awt.event.ActionEvent evt) {
+    }
 
-    private void healthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_healthButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_healthButtonActionPerformed
+    private void healthButtonActionPerformed(java.awt.event.ActionEvent evt) {
+    }
 
-    private void chooseAttributeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chooseAttributeButtonActionPerformed
+    private void chooseAttributeButtonActionPerformed(java.awt.event.ActionEvent evt) {
         if (healthButton.isSelected()) {
             helper.action.addHealthToPlayer(helper.fight.getHuman());
         } else {
@@ -1309,7 +1305,7 @@ public class JFrames extends javax.swing.JFrame {
         levelUp.dispose();
         setPanelEnabled(fightPanel,true);
 
-    }//GEN-LAST:event_chooseAttributeButtonActionPerformed
+    }
 
     public void setPanelEnabled(JPanel panel, Boolean isEnabled) {
         if(levelUp.isVisible()) return;
@@ -1323,43 +1319,20 @@ public class JFrames extends javax.swing.JFrame {
         }
     }
 
-    private void debuffButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_debuffButtonActionPerformed
+    private void debuffButtonActionPerformed(java.awt.event.ActionEvent evt) {
         helper.fight.hit(2, helper.getResults(), locationsNumber, helper.getEnemies());
-    }//GEN-LAST:event_debuffButtonActionPerformed
+    }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFrames.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFrames.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFrames.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFrames.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
         java.awt.EventQueue.invokeLater(() -> {
             new JFrames().setVisible(true);
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel GIFLabel;
     private javax.swing.JButton attackButton;
     private javax.swing.JPanel attributePanel;
@@ -1445,5 +1418,4 @@ public class JFrames extends javax.swing.JFrame {
     private javax.swing.JLabel unavailableItemLabel;
     private javax.swing.JButton useItemButton;
     private javax.swing.JLabel victoryLabel;
-    // End of variables declaration//GEN-END:variables
 }

@@ -5,11 +5,19 @@ import mortalkombatbversion.Components.GameCharacter;
 
 public class Debuff extends Action {
 
+    /**
+     * @return
+     */
     @Override
     public String getType() {
         return "Debuff";
     }
 
+    /**
+     * @param human
+     * @param enemy
+     * @param enemyActionType
+     */
     @Override
     public void realisation(GameCharacter human, GameCharacter enemy, String enemyActionType) {
         switch (enemyActionType) {

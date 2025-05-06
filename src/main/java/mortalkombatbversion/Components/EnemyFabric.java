@@ -5,6 +5,10 @@ import static mortalkombatbversion.Components.CharacterName.*;
 
 
 public class EnemyFabric {
+    /**
+     * @param characterName
+     * @return
+     */
     public GameCharacter create(CharacterName characterName) {
         return switch (characterName){
             default -> null;

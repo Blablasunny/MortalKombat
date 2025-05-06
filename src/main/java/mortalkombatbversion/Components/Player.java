@@ -7,6 +7,12 @@ public class Player extends GameCharacter {
     private int nextexperience;
     private Items[] items;
 
+    /**
+     * @param level
+     * @param health
+     * @param damage
+     * @param name
+     */
     public Player(int level, int health, int damage, CharacterName name) {
         super(level, health, damage, name, "/kitana1.png");
         this.points = 0;
